@@ -78,6 +78,7 @@ namespace TriangleTest
         [Test]
         public void ValidScalenetriangle_ValidInput_AllDifferentNumber1()
         {
+            //Unit Test 1 for Scalene Trinagle 
             int side1 = 3;
             int side2 = 4;
             int side3 = 5;
@@ -91,6 +92,7 @@ namespace TriangleTest
         [Test]
         public void ValidScalenetriangle_ValidInput_AllDifferentNumber2()
         {
+            //Unit Test 2 for Scalene Trinagle 
             int side1 = 300;
             int side2 = 400;
             int side3 = 500;
@@ -104,6 +106,7 @@ namespace TriangleTest
         [Test]
         public void ValidScalenetriangle_ValidInput_AllDifferentNumber3()
         {
+            //Unit Test 3 for Scalene Trinagle 
             int side1 = 7;
             int side2 = 24;
             int side3 = 25;
@@ -117,6 +120,7 @@ namespace TriangleTest
         [Test]
         public void ValidScalenetriangle_ValidInput_AllDifferentNumber4()
         {
+            //Unit Test 4 for Scalene Trinagle 
             int side1 = 20;
             int side2 = 21;
             int side3 = 22;
@@ -130,6 +134,7 @@ namespace TriangleTest
         [Test]
         public void ValidScalenetriangle_ValidInput_AllDifferentNumber5()
         {
+            //Unit Test 4 for Scalene Trinagle
             int side1 = 11;
             int side2 = 14;
             int side3 = 16;
@@ -143,6 +148,7 @@ namespace TriangleTest
         [Test]
         public void Validtriangle_ValidInput_OnesSideZero()
         {
+            // Unit test for Triangle where One Side is Zero
             int side1 = 11;
             int side2 = 0;
             int side3 = 18;
@@ -156,6 +162,7 @@ namespace TriangleTest
         [Test]
         public void Validtriangle_ValidInput_TwoSideZero()
         {
+            // Unit test for Triangle where Two Side is Zero
             int side1 = 11;
             int side2 = 0;
             int side3 = 0;
@@ -169,6 +176,7 @@ namespace TriangleTest
         [Test]
         public void Validtriangle_ValidInput_AllThresSideZero()
         {
+            // Unit test for Triangle where All Three Side is Zero
             int side1 = 0;
             int side2 = 0;
             int side3 = 0;
@@ -182,6 +190,7 @@ namespace TriangleTest
         [Test]
         public void Validtriangle_ValidInput_SumofTwoisLessthanThirdSide()
         {
+            //Unit Test for Triangle Where Sum of two side is Less than Thrid Side
             int side1 = 2;
             int side2 = 3;
             int side3 = 8;
@@ -195,6 +204,7 @@ namespace TriangleTest
         [Test]
         public void Validtriangle_ValidInput_SumofTwoisEqualtoThirdSide()
         {
+            //Unit Test for Triangle Where Sum of two side is Equal to Thrid Side
             int side1 = 2;
             int side2 = 3;
             int side3 = 5;
@@ -208,6 +218,7 @@ namespace TriangleTest
         [Test]
         public void Validtriangle_ValidInput_SideareNegative()
         {
+            //Unit Test for triangle where side are Negative
             int side1 = 5;
             int side2 = -3;
             int side3 = -9;
