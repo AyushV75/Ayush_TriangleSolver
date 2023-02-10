@@ -179,5 +179,47 @@ namespace TriangleTest
             string actual = AnalyzeTriangle(side1, side2, side3);
             Assert.AreEqual(expected, actual);
         }
+        [Test]
+        public void Validtriangle_ValidInput_SumofTwoisLessthanThirdSide()
+        {
+            int side1 = 2;
+            int side2 = 3;
+            int side3 = 8;
+
+
+
+            string expected = "Based on the values entered, the triangle is INVALID";
+            string actual = AnalyzeTriangle(side1, side2, side3);
+            Assert.AreEqual(expected, actual);
+        }
+        [Test]
+        public void Validtriangle_ValidInput_SumofTwoisEqualtoThirdSide()
+        {
+            int side1 = 2;
+            int side2 = 3;
+            int side3 = 5;
+
+
+
+            string expected = "Based on the values entered, the triangle is INVALID";
+            string actual = AnalyzeTriangle(side1, side2, side3);
+            Assert.AreEqual(expected, actual);
+        }
+        [Test]
+        public void Validtriangle_ValidInput_SideareNegative()
+        {
+            int side1 = 5;
+            int side2 = -3;
+            int side3 = -9;
+
+
+
+            string expected = "Based on the values entered, the triangle is INVALID";
+            string actual = AnalyzeTriangle(side1, side2, side3);
+            Assert.AreEqual(expected, actual);
+        }
+
+
+
     }
 }
