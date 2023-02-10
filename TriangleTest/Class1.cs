@@ -141,7 +141,7 @@ namespace TriangleTest
             Assert.AreEqual(expected, actual);
         }
         [Test]
-        public void Validtriangle_ValidInput_OneLengthZero()
+        public void Validtriangle_ValidInput_OnesSideZero()
         {
             int side1 = 11;
             int side2 = 0;
@@ -153,7 +153,31 @@ namespace TriangleTest
             string actual = AnalyzeTriangle(side1, side2, side3);
             Assert.AreEqual(expected, actual);
         }
+        [Test]
+        public void Validtriangle_ValidInput_TwoSideZero()
+        {
+            int side1 = 11;
+            int side2 = 0;
+            int side3 = 0;
 
-       
+
+
+            string expected = "At least one side of your triangle has a zero length and is thus invalid";
+            string actual = AnalyzeTriangle(side1, side2, side3);
+            Assert.AreEqual(expected, actual);
+        }
+        [Test]
+        public void Validtriangle_ValidInput_AllThresSideZero()
+        {
+            int side1 = 0;
+            int side2 = 0;
+            int side3 = 0;
+
+
+
+            string expected = "At least one side of your triangle has a zero length and is thus invalid";
+            string actual = AnalyzeTriangle(side1, side2, side3);
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
