@@ -144,15 +144,16 @@ namespace TriangleTest
         public void Validtriangle_ValidInput_OneLengthZero()
         {
             int side1 = 11;
-            int side2 = 14;
-            int side3 = 16;
+            int side2 = 0;
+            int side3 = 18;
 
 
 
-            string expected = "Based on all three sides being different, the type of triangle is a SCALENE";
+            string expected = "At least one side of your triangle has a zero length and is thus invalid";
             string actual = AnalyzeTriangle(side1, side2, side3);
             Assert.AreEqual(expected, actual);
         }
+
        
     }
 }
